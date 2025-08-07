@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FNB App Academy</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo3.png" alt="FNB App Academy Logo">
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="#" class="nav-links-btn">Join</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        &#9776;
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the FNB App Academy</h1>
+      <p>Empowering future tech talent, today.</p>
+      
+      <!-- Countdown Timer -->
+      <div class="countdown-wrapper">
+        <div class="countdown-card"><span id="days">00</span><small>Days</small></div>
+        <div class="countdown-card"><span id="hours">00</span><small>Hours</small></div>
+        <div class="countdown-card"><span id="minutes">00</span><small>Minutes</small></div>
+        <div class="countdown-card"><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+
+      <!-- Email Waitlist Signup -->
+      <form action="https://formspree.io/f/myzpnjal" method="POST" class="waitlist-form" id="waitlist-form" onsubmit="return showSuccess(event)">
+  <input type="email" name="email" id="waitlist-email" placeholder="Enter your email" required />
+  <button type="submit" id="waitlist-btn">Join the Waitlist</button>
+</form>
+
+<p class="waitlist-meta">
+  Join <strong>217,000+</strong> learners • We respect your privacy. Unsubscribe anytime.
+</p>
+
+<div id="waitlist-success" class="success-message hidden">
+  <span class="checkmark">✔</span> Thanks! You're on the list. We'll notify you when applications open.
+</div>
+      
+      <!-- Value Proposition Pills -->
+      <div class="value-props">
+        <span class="pill">100% Free</span>
+        <span class="pill">FNB App Academy Certified</span>
+        <span class="pill">217K+ Alumni</span>
+        <span class="pill">9-Week Program</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="stats-row">
+      <div class="stat-card">
+        <h3><span data-target="217000">0</span></h3>
+        <p>Active Learners</p>
+      </div>
+      <div class="stat-card">
+        <h3><span data-target="9">0</span></h3>
+        <p>Week Program</p>
+      </div>
+      <div class="stat-card">
+        <h3><span data-target="100">0</span>%</h3>
+        <p>Free Access</p>
+      </div>
+      <div class="stat-card">
+        <h3><span data-target="100000">0</span></h3>
+        <p>FNB App Academy Certified</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="vision-section">
+    <h2 class="vision-heading typewriter">Our Vision: Africa's Digital Renaissance</h2>
+    <p class="vision-subtitle">
+      Transforming Coders into Creators, Developers into Digital Entrepreneurs
+    </p>
+    <p class="vision-statement">
+      We don't just teach code – we empower a generation to solve uniquely African problems,
+      create sustainable businesses, and drive economic growth across the continent.
+      From unemployment to innovation, from problems to solutions.
+    </p>
+
+    <div class="vision-highlights">
+      <div class="vision-card">
+        <h4>Continental Impact</h4>
+        <p>Africa's largest free digital skills initiative reaching learners globally</p>
+      </div>
+      <div class="vision-card"> 
+        <h4>Innovation First</h4>
+        <p>Start with problems, build solutions that create real value for communities</p>
+      </div>
+      <div class="vision-card">
+        <h4>Economic Empowerment</h4>
+        <p>From job seekers to job creators - building sustainable tech entrepreneurship</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech-stack-section">
+    <div class="tech-stack-container">
+      <h2 class="tech-title">Master the Complete Tech Stack</h2>
+      <p class="tech-subtitle">
+        From frontend to AI integration – become a full-stack developer ready for the future
+      </p>
+
+      <div class="tech-grid">
+        <!-- Frontend -->
+        <div class="tech-card frontend">
+          <div class="tech-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="tech-list">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+          </div>
+          <p>Build stunning, responsive user interfaces</p>
+        </div>
+
+        <!-- Backend -->
+        <div class="tech-card backend">
+          <div class="tech-icon">⚡</div>
+          <h3>Backend</h3>
+          <div class="tech-list">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">APIs</span>
+          </div>
+          <p>Create powerful server-side applications</p>
+        </div>
+
+        <!-- Database -->
+        <div class="tech-card database">
+          <div class="tech-icon">🗄️</div>
+          <h3>Database</h3>
+          <div class="tech-list">
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">SQLAlchemy</span>
+            <span class="tech-tag">Data Analysis</span>
+          </div>
+          <p>Master data storage and management</p>
+        </div>
+
+        <!-- Dev Tools -->
+        <div class="tech-card tools">
+          <div class="tech-icon">🛠️</div>
+          <h3>Dev Tools</h3>
+          <div class="tech-list">
+            <span class="tech-tag">Git</span>
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Deployment</span>
+          </div>
+          <p>Professional development workflow</p>
+        </div>
+
+        <!-- AI Integration -->
+        <div class="tech-card ai-featured">
+          <div class="tech-icon ai-glow">🤖</div>
+          <h3>AI Integration</h3>
+          <div class="tech-list">
+            <span class="tech-tag">GitHub Copilot</span>
+            <span class="tech-tag">AI-Assisted Dev</span>
+            <span class="tech-tag">Lovable.dev</span>
+            <span class="tech-tag">Blackbox AI</span>
+          </div>
+          <p>Build with cutting-edge AI tools</p>
+        </div>
+
+        <!-- Business -->
+        <div class="tech-card business">
+          <div class="tech-icon">💼</div>
+          <h3>Business</h3>
+          <div class="tech-list">
+            <span class="tech-tag">MVP Development</span>
+            <span class="tech-tag">Pitching</span>
+            <span class="tech-tag">Marketing</span>
+            <span class="tech-tag">Funding</span>
+          </div>
+          <p>Transform ideas into successful ventures</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories Section -->
+  <section id="success-stories-section">
+    <div class="section-header">
+      <h2>Real Stories, Real Transformations</h2>
+      <p>Meet the alumni who transformed their lives and are now transforming their communities</p>
+    </div>
+
+    <div class="success-scroll-container">
+      <!-- Card 1 -->
+      <div class="success-card featured">
+        <div class="success-avatar">
+          <div class="avatar-placeholder"><img src="images/User6.jpg" alt="Talha Kathrada" class="avatar"></div>
+          <div class="success-badge">Full-Stack Dev</div>
+        </div>
+        <div class="success-content">
+          <h3>Simphiwe Radebe</h3>
+          <p class="success-title">Full-Stack Developer at Leading Financial Institution</p>
+          <p class="success-preview">"From matric certificate to full-stack developer - the academy changed everything for me."</p>
+          <div class="transformation-tags">
+            <span class="before-tag">Before: Matric Only</span>
+            <span class="arrow">→</span>
+            <span class="after-tag">After: Full-Stack Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="success-card">
+        <div class="success-avatar">
+          <div class="avatar-placeholder"><img src="images/User5.jpg" alt="Talha Kathrada" class="avatar"></div>
+          <div class="success-badge">Community Leader</div>
+        </div>
+        <div class="success-content">
+          <h3>Mpho Ntusi</h3>
+          <p class="success-title">Tech Entrepreneur & Community Upliftment Advocate</p>
+          <p class="success-preview">"Gained skills for employment and community upliftment - now I'm building solutions for my community."</p>
+          <div class="transformation-tags">
+            <span class="before-tag">Before: Job Seeker</span>
+            <span class="arrow">→</span>
+            <span class="after-tag">After: Community Builder</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="success-card">
+        <div class="success-avatar">
+          <div class="avatar-placeholder"><img src="images/User4.jpg" alt="Talha Kathrada" class="avatar"></div>
+          <div class="success-badge">AI Developer</div>
+        </div>
+        <div class="success-content">
+          <h3>Codebloom (Alumni)</h3>
+          <p class="success-title">97.78% Final Exam Score</p>
+          <p class="success-preview">"Achieved strong Python foundation and AI exposure. Now confident building real-world apps with cutting-edge tools."</p>
+          <div class="transformation-tags">
+            <span class="before-tag">Before: Beginner</span>
+            <span class="arrow">→</span>
+            <span class="after-tag">After: AI-Ready Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="success-card">
+        <div class="success-avatar">
+          <div class="avatar-placeholder"><img src="images/User3.jpg" alt="Talha Kathrada" class="avatar"></div>
+          <div class="success-badge">Confident Coder</div>
+        </div>
+        <div class="success-content">
+          <h3>Anonymous Alumni</h3>
+          <p class="success-title">From Self-Doubt to Tech Confidence</p>
+          <p class="success-preview">"The academy didn't just teach me to code - it taught me to believe in myself and think like a problem-solver."</p>
+          <div class="transformation-tags">
+            <span class="before-tag">Before: Self-Doubt</span>
+            <span class="arrow">→</span>
+            <span class="after-tag">After: Confident Creator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Section -->
+  <section class="interactive-section">
+    <div class="container-interactive-section">
+      <div class="section-header">
+        <h2 class="section-title">Explore Your Journey</h2>
+        <p class="section-subtitle">
+          Discover our comprehensive 9-week curriculum and visualize your future career path. 
+          From beginner to industry-ready professional in just 9 weeks.
+        </p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="explorer-tabs">
+        <button class="tab-button active" onclick="switchTab('curriculum')">
+          <span class="tab-icon">📚</span>
+          Curriculum Explorer
+        </button>
+        <button class="tab-button" onclick="switchTab('careers')">
+          <span class="tab-icon">🚀</span>
+          Career Paths
+        </button>
+        <button class="tab-button" onclick="switchTab('timeline')">
+          <span class="tab-icon">⏱️</span>
+          Learning Timeline
+        </button>
+      </div>
+
+      <!-- Curriculum Explorer Tab -->
+      <div id="curriculum" class="tab-content active">
+        <div class="level-indicator">
+          <div class="level-badge active">
+            <div class="level-title">Beginner</div>
+            <div class="level-duration">Weeks 1-3</div>
+          </div>
+          <div class="level-badge">
+            <div class="level-title">Intermediate</div>
+            <div class="level-duration">Weeks 4-6</div>
+          </div>
+          <div class="level-badge">
+            <div class="level-title">Advanced</div>
+            <div class="level-duration">Weeks 7-9</div>
+          </div>
+        </div>
+
+        <div class="curriculum-grid">
+          <!-- Week 1 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">1</div>
+              <div class="week-level">Beginner</div>
+            </div>
+            <h3 class="week-title">App Strategies & Foundation</h3>
+            <ul class="week-topics">
+              <li>Mobile app strategy fundamentals</li>
+              <li>Understanding user needs</li>
+              <li>Market research techniques</li>
+              <li>Introduction to app ecosystems</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Strategy</span>
+              <span class="skill-tag">Research</span>
+              <span class="skill-tag">Planning</span>
+            </div>
+          </div>
+
+          <!-- Week 2 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">2</div>
+              <div class="week-level">Beginner</div>
+            </div>
+            <h3 class="week-title">Git, GitHub & Version Control</h3>
+            <ul class="week-topics">
+              <li>Git fundamentals and workflow</li>
+              <li>GitHub collaboration</li>
+              <li>Branching and merging</li>
+              <li>Open source contribution</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Collaboration</span>
+            </div>
+          </div>
+
+          <!-- Week 3 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">3</div>
+              <div class="week-level">Beginner</div>
+            </div>
+            <h3 class="week-title">HTML & UX Principles</h3>
+            <ul class="week-topics">
+              <li>HTML5 structure and semantics</li>
+              <li>UX design fundamentals</li>
+              <li>Accessibility principles</li>
+              <li>User-centered design</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">UX Design</span>
+              <span class="skill-tag">Accessibility</span>
+            </div>
+          </div>
+
+          <!-- Week 4 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">4</div>
+              <div class="week-level">Intermediate</div>
+            </div>
+            <h3 class="week-title">Design Thinking & CSS</h3>
+            <ul class="week-topics">
+              <li>Design thinking methodology</li>
+              <li>CSS3 advanced styling</li>
+              <li>Responsive design patterns</li>
+              <li>Visual design principles</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Design Thinking</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Week 5 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">5</div>
+              <div class="week-level">Intermediate</div>
+            </div>
+            <h3 class="week-title">APIs & JavaScript</h3>
+            <ul class="week-topics">
+              <li>RESTful API concepts</li>
+              <li>JavaScript fundamentals</li>
+              <li>DOM manipulation</li>
+              <li>Asynchronous programming</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">APIs</span>
+              <span class="skill-tag">DOM</span>
+            </div>
+          </div>
+
+          <!-- Week 6 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">6</div>
+              <div class="week-level">Intermediate</div>
+            </div>
+            <h3 class="week-title">User-Centric Development</h3>
+            <ul class="week-topics">
+              <li>React.js fundamentals</li>
+              <li>Component-based architecture</li>
+              <li>State management</li>
+              <li>User interface development</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Components</span>
+              <span class="skill-tag">State Management</span>
+            </div>
+          </div>
+
+          <!-- Week 7 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">7</div>
+              <div class="week-level">Advanced</div>
+            </div>
+            <h3 class="week-title">Backend Development</h3>
+            <ul class="week-topics">
+              <li>Python programming</li>
+              <li>Django/Flask frameworks</li>
+              <li>Database design (SQL)</li>
+              <li>Server-side architecture</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Week 8 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">8</div>
+              <div class="week-level">Advanced</div>
+            </div>
+            <h3 class="week-title">AI Integration & Business</h3>
+            <ul class="week-topics">
+              <li>AI-assisted development</li>
+              <li>GitHub Copilot integration</li>
+              <li>Business development basics</li>
+              <li>Funding strategies</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">AI Tools</span>
+              <span class="skill-tag">GitHub Copilot</span>
+              <span class="skill-tag">Business Development</span>
+            </div>
+          </div>
+
+          <!-- Week 9 -->
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">9</div>
+              <div class="week-level">Advanced</div>
+            </div>
+            <h3 class="week-title">Marketing & Launch</h3>
+            <ul class="week-topics">
+              <li>Digital marketing strategies</li>
+              <li>MVP development</li>
+              <li>Pitching and presentation</li>
+              <li>Portfolio development</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Marketing</span>
+              <span class="skill-tag">MVP</span>
+              <span class="skill-tag">Pitching</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Career Paths Tab -->
+      <div id="careers" class="tab-content">
+        <div class="career-paths">
+          <!-- Full-Stack Developer -->
+          <div class="career-card">
+            <div class="career-icon">💻</div>
+            <h3 class="career-title">Full-Stack Developer</h3>
+            <p class="career-description">
+              Build complete web applications from frontend to backend. Work with modern technologies 
+              and frameworks to create scalable solutions for businesses.
+            </p>
+            <div class="career-requirements">
+              <h4>Key Skills Needed:</h4>
+              <ul class="requirement-list">
+                <li>React.js & JavaScript</li>
+                <li>Python & Django/Flask</li>
+                <li>Database management (SQL)</li>
+                <li>API development & integration</li>
+                <li>Git version control</li>
+              </ul>
+            </div>
+            <button class="career-cta">Start This Path</button>
+          </div>
+
+          <!-- Tech Entrepreneur -->
+          <div class="career-card">
+            <div class="career-icon">🚀</div>
+            <h3 class="career-title">Tech Entrepreneur</h3>
+            <div class="career-salary">Variable Income Potential</div>
+            <p class="career-description">
+              Launch your own tech startup or digital solutions company. Solve African problems 
+              with innovative technology solutions.
+            </p>
+            <div class="career-requirements">
+              <h4>Key Skills Needed:</h4>
+              <ul class="requirement-list">
+                <li>MVP development</li>
+                <li>Business strategy & planning</li>
+                <li>Marketing & pitching</li>
+                <li>Full-stack development</li>
+                <li>Funding & investment knowledge</li>
+              </ul>
+            </div>
+            <button class="career-cta">Start This Path</button>
+          </div>
+
+          <!-- Frontend Specialist -->
+          <div class="career-card">
+            <div class="career-icon">🎨</div>
+            <h3 class="career-title">Frontend Specialist</h3>
+            <p class="career-description">
+              Focus on creating beautiful, user-friendly interfaces. Specialize in modern frontend 
+              frameworks and user experience design.
+            </p>
+            <div class="career-requirements">
+              <h4>Key Skills Needed:</h4>
+              <ul class="requirement-list">
+                <li>Advanced React.js</li>
+                <li>UX/UI design principles</li>
+                <li>CSS3 & responsive design</li>
+                <li>JavaScript & modern frameworks</li>
+                <li>Design thinking methodology</li>
+              </ul>
+            </div>
+            <button class="career-cta">Start This Path</button>
+          </div>
+
+          <!-- Community Tech Leader -->
+          <div class="career-card">
+            <div class="career-icon">🌍</div>
+            <h3 class="career-title">Community Tech Leader</h3>
+            <p class="career-description">
+              Use technology to uplift communities and solve local challenges. Work with NGOs, 
+              government, or start community-focused tech initiatives.
+            </p>
+            <div class="career-requirements">
+              <h4>Key Skills Needed:</h4>
+              <ul class="requirement-list">
+                <li>Full-stack development</li>
+                <li>Community engagement</li>
+                <li>Project management</li>
+                <li>Social impact measurement</li>
+                <li>Partnership development</li>
+              </ul>
+            </div>
+            <button class="career-cta">Start This Path</button>
+          </div>
+
+          <!-- Backend Developer -->
+          <div class="career-card">
+            <div class="career-icon">⚙️</div>
+            <h3 class="career-title">Backend Developer</h3>
+            <p class="career-description">
+              Build robust server-side applications and APIs. Work with databases, cloud services, 
+              and enterprise-level backend systems.
+            </p>
+            <div class="career-requirements">
+              <h4>Key Skills Needed:</h4>
+              <ul class="requirement-list">
+                <li>Python & Django/Flask</li>
+                <li>Database design & optimization</li>
+                <li>API development</li>
+                <li>Cloud services & deployment</li>
+                <li>Security best practices</li>
+              </ul>
+            </div>
+            <button class="career-cta">Start This Path</button>
+          </div>
+
+          <!-- AI Integration Specialist -->
+          <div class="career-card">
+            <div class="career-icon">🤖</div>
+            <h3 class="career-title">AI Integration Specialist</h3>
+            <p class="career-description">
+              Integrate AI tools and solutions into existing systems. Help businesses leverage 
+              artificial intelligence for competitive advantage.
+            </p>
+            <div class="career-requirements">
+              <h4>Key Skills Needed:</h4>
+              <ul class="requirement-list">
+                <li>AI tool integration (GitHub Copilot)</li>
+                <li>Python & machine learning basics</li>
+                <li>API development & integration</li>
+                <li>Full-stack development</li>
+                <li>Business process optimization</li>
+              </ul>
+            </div>
+            <button class="career-cta">Start This Path</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Timeline Tab -->
+      <div id="timeline" class="tab-content">
+        <div class="progress-path">
+          <div class="progress-line"></div>
+          <div class="progress-steps">
+            <div class="progress-step completed">
+              1
+              <div class="step-label">Apply & Register</div>
+            </div>
+            <div class="progress-step completed">
+              2
+              <div class="step-label">Foundation<br>(Weeks 1-3)</div>
+            </div>
+            <div class="progress-step">
+              3
+              <div class="step-label">Build Skills<br>(Weeks 4-6)</div>
+            </div>
+            <div class="progress-step">
+              4
+              <div class="step-label">Advanced<br>(Weeks 7-9)</div>
+            </div>
+            <div class="progress-step">
+              5
+              <div class="step-label">Launch Career</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">📝</div>
+              <div class="week-level">Start</div>
+            </div>
+            <h3 class="week-title">Application Process</h3>
+            <ul class="week-topics">
+              <li>Complete online application</li>
+              <li>No coding experience required</li>
+              <li>Open to all ages and backgrounds</li>
+              <li>Join WhatsApp support group</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Free Registration</span>
+              <span class="skill-tag">Global Access</span>
+            </div>
+          </div>
+
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">🎓</div>
+              <div class="week-level">Complete</div>
+            </div>
+            <h3 class="week-title">NQF Level 5 Certification</h3>
+            <ul class="week-topics">
+              <li>SETA-accredited qualification</li>
+              <li>Recognized by industry</li>
+              <li>Portfolio of real projects</li>
+              <li>Alumni network access</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Certified</span>
+              <span class="skill-tag">Industry Ready</span>
+            </div>
+          </div>
+
+          <div class="week-card">
+            <div class="week-header">
+              <div class="week-number">💼</div>
+              <div class="week-level">Career</div>
+            </div>
+            <h3 class="week-title">Post-Graduation Support</h3>
+            <ul class="week-topics">
+              <li>100 volunteer alumni mentors</li>
+              <li>Job placement assistance</li>
+              <li>Entrepreneurship support</li>
+              <li>Ongoing community access</li>
+            </ul>
+            <div class="week-skills">
+              <span class="skill-tag">Mentorship</span>
+              <span class="skill-tag">Community</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What is the FNB App Academy?</button>
+        <div class="faq-answer">It's a program designed to train young talent in app development, cybersecurity, and design through hands-on experience and mentorship.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Who can apply?</button>
+        <div class="faq-answer">Any South African citizen aged 18–35 with a passion for tech and a drive to learn is welcome to apply.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is there a cost to join?</button>
+        <div class="faq-answer">No, the program is fully sponsored by FNB. Selected participants receive training at no cost.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How long is the program?</button>
+        <div class="faq-answer">The main academy program runs for 9 weeks with additional career support after completion.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist Section -->
+  <section id="waitlist-section">
+    <div class="waitlist-container">
+      <h2 class="waitlist-heading">Don't Miss Out - Join the Next Cohort</h2>
+      <p class="waitlist-subheading">
+        Be the first to know when applications open for Africa's largest free digital skills program
+      </p>
+
+      <div class="waitlist-countdown">
+        <div class="countdown-card"><span id="w_days">00</span><small>Days</small></div>
+        <div class="countdown-card"><span id="w_hours">00</span><small>Hours</small></div>
+        <div class="countdown-card"><span id="w_minutes">00</span><small>Minutes</small></div>
+        <div class="countdown-card"><span id="w_seconds">00</span><small>Seconds</small></div>
+      </div>
+
+      <form id="w_waitlist-form" class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input
+          type="email"
+          id="w_waitlist-email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <button type="submit" id="w_waitlist-btn">Join Waitlist</button>
+      </form>
+
+      <p class="waitlist-meta">
+        Join <strong>217,000+</strong> learners • We respect your privacy. Unsubscribe anytime.
+      </p>
+
+      <div id="w_waitlist-success" class="success-message hidden">
+        <span class="checkmark">✔</span> Thanks! You're on the list. We'll notify you when applications open.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Made with love ❤️ by <a href="https://monde-castro.github.io/portfolio-website/" target="_blank" rel="noopener noreferrer">Monde Modiba</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
