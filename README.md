@@ -1,4 +1,3 @@
-
 # FNB App Academy Website 🌍
 
 A responsive, glassmorphism-inspired website designed to showcase the mission, curriculum, and success stories of the FNB App Academy — Africa's largest free digital skills program.
