@@ -22,6 +22,6 @@ A responsive, glassmorphism-inspired website designed to showcase the mission, c
 This site uses Formspree to collect email addresses from prospective students who wish to join the academy.
 
 ## 🔗 Live Demo
-[https://yourusername.github.io/fnb-app-academy-site](https://yourusername.github.io/fnb-app-academy-site)
+https://monde-castro.github.io/FNB-APP-ACADEMY-MOCK-WEBSITE/
 
 ## 🧠 Built With Love by Monde Modiba ❤️
